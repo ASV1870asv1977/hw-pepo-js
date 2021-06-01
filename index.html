@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks for lesson 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content">
+        <h2 class="heading">Урок № 2. Домашнее задание.</h2>
+        <div class="content_tasks">
+            <button id="task_1" class="button">Задача № 1</button>
+            <button id="task_2" class="button">Задача № 2</button>
+            <button id="task_3" class="button">Задача № 3</button>
+            <button id="task_4" class="button">Задача № 4</button>
+            <button id="task_5" class="button">Задача № 5</button>
+            <button id="task_6" class="button">Задача № 6</button>
+            <button id="task_7" class="button">Задача № 7*</button>
+            <button id="task_8" class="button">Задача № 8*</button>
+        </div>
+
+        <div id="questionsAnswers_1" class="questions__answers">
+            <h3>Задача № 1.</h3>
+            <p>Почему код дает именно такие результаты?<br>
+                var a = 1, b = 1, c, d;<br>
+                c = ++a; alert(c); // 2<br>
+                d = b++; alert(d); // 1<br>
+                c = (2+ ++a); alert(c); // 5<br>
+                d = (2+ b++); alert(d); // 4<br>
+                alert(a); // 3<br>
+                alert(b); // 3
+            </p>
+            <button id="fulfillment_1" class="button">Ответ</button>
+        </div>
+
+        <div id="questionsAnswers_2" class="questions__answers">
+            <h3>Задача № 2.</h3>
+            <p>Чему будет равен x?<br>
+                var a = 2;<br>
+                var x = 1 + (a *= 2);
+            </p>
+            <button id="fulfillment_2" class="button">Ответ</button>
+        </div>
+
+        <div id="questionsAnswers_3" class="questions__answers">
+            <h3>Задача № 3.</h3>
+            <p>Объявить две целочисленные переменные&nbsp;&mdash; a&nbsp;и&nbsp;b&nbsp;и&nbsp;задать
+                им&nbsp;произвольные начальные значения. Затем написать скрипт, который работает по&nbsp;следующему
+                принципу:<br>
+                - если a и b положительные, вывести их разность;<br>
+                - если а и b отрицательные, вывести их произведение;<br>
+                - если а и b разных знаков, вывести их сумму;
+            </p>
+            <button id="fulfillment_3" class="button">Решение</button>
+        </div>
+
+        <div id="questionsAnswers_4" class="questions__answers">
+            <h3>Задача № 4.</h3>
+            <p>Присвоить переменной а&nbsp;значение в&nbsp;промежутке [0..15]. С&nbsp;помощью оператора switch
+                организовать вывод чисел от&nbsp;a&nbsp;до&nbsp;15.
+            </p>
+            <button id="fulfillment_4" class="button">Решение</button>
+        </div>
+
+        <div id="questionsAnswers_5" class="questions__answers">
+            <h3>Задача № 5.</h3>
+            <p>Реализовать четыре основные арифметические операции в&nbsp;виде функций с&nbsp;двумя параметрами.
+                Обязательно использовать оператор return.
+            </p>
+            <button id="fulfillment_5" class="button">Решение</button>
+        </div>
+
+        <div id="questionsAnswers_6" class="questions__answers">
+            <h3>Задача № 6.</h3>
+            <p>Реализовать функцию с&nbsp;тремя параметрами: function mathOperation(arg1, arg2, operation), где arg1,
+                arg2&nbsp;&mdash; значения аргументов, operation&nbsp;&mdash; строка с&nbsp;названием операции.
+                В&nbsp;зависимости от&nbsp;переданного значения выполнить одну из&nbsp;арифметических операций
+                (использовать функции из&nbsp;пункта&nbsp;5) и&nbsp;вернуть полученное значение (применить switch).
+            </p>
+            <button id="fulfillment_6" class="button">Решение</button>
+        </div>
+
+        <div id="questionsAnswers_7" class="questions__answers">
+            <h3>Задача № 7*.</h3>
+            <p>Сравнить null и 0. Объяснить результат.
+            </p>
+            <button id="fulfillment_7" class="button">Решение</button>
+        </div>
+
+        <div id="questionsAnswers_8" class="questions__answers">
+            <h3>Задача № 8*.</h3>
+            <p>С&nbsp;помощью рекурсии организовать функцию возведения числа в&nbsp;степень. Формат: function power(val,
+                pow), где val&nbsp;&mdash; заданное число, pow &mdash;&mdash; степень.
+            </p>
+            <button id="fulfillment_8" class="button">Решение</button>
+        </div>
+
+        <div id="calc" class="calculator">
+
+            <input id="number" class="calculator_window" type="text" size="25">
+            <button id="menu" class="calculator_window_operation_menu">menu</button>
+            <div class="calculator_window_operation">
+                <button id="addition" class="calculator_window_operation_key">+</button>
+                <button id="subtraction" class="calculator_window_operation_key">-</button>
+                <button id="multiplication" class="calculator_window_operation_key">x</button>
+                <button id="division" class="calculator_window_operation_key">/</button>
+                <button id="enter" class="calculator_window_operation_enter">=</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
