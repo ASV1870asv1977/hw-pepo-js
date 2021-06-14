@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://image.freepik.com/free-photo/starry-night-sky_1048-11828.jpg);
+    
+}
+
+.header {
+    margin: 0 auto;
+    width: 1024px;
+    height: 150px;
+    background-color: rgb(247, 241, 241);    
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_logo {
+    width: 300px;
+    height: 100px;
+    margin-top: 25px;
+    background-color: rgb(247, 241, 241);
+    
+    margin-left: 25px;
+}
+
+.header_menu {
+    list-style-type: none;
+    margin-top: 25px;    
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.header_menu_key {    
+    width: 80px;
+    height: 25px;
+    background-color: rgb(206, 210, 211);
+    margin: 0 5px;
+    text-decoration: none;      
+    font: 1em sans-serif;
+    font-size: 14px; 
+    color:black;
+    padding-top: 7px;
+    text-align: center;
+}
+
+.header_menu_key:hover {
+    background-color: rgb(99, 97, 97);   
+    color: #fff; 
+}
+
+.header_menu_key:active {
+    background-color: rgb(250, 4, 4);   
+    color: #fff; 
+}
+
+.header_form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.header_search {      
+    width: 205px;
+    height: 30px;
+    
+}
+
+.header_search_key {
+    width: 60px;
+    height: 30px;
+    margin-top: 25px;
+    margin-right: 25px;
+    background-color: rgb(206, 210, 211);
+}
+
+.header_search_key:hover {
+    background-color: rgb(99, 97, 97);   
+    color: #fff; 
+}
+
+.header_search_key:active {
+    background-color: rgb(250, 4, 4);   
+    color: #fff; 
+}
+
+.header_img {
+    width: 70px;
+    height: 70px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.header_bascet_count {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(206, 210, 211);
+    margin-top: 30px;    
+    color: #fff;
+    display: flex;    
+    justify-content: center;
+    align-items: center;     
+}
+
+.header_bascet_price {
+    font: 1em sans-serif;
+    font-size: 12px; 
+    color:black;
+    padding-top: 37px;
+    padding-left: 10px;
+}
+
+.content {
+    margin: 10px auto;
+    width: 1024px;    
+    background-color: rgb(247, 241, 241);    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.content_main {
+    justify-content: flex-start;
+}
+
+.content_main p {
+    margin-top: 30px;
+    margin-right: 25px;    
+    padding: 10px;
+    width: 615px;
+    font: 1em sans-serif;
+    background-color: rgb(206, 210, 211);
+    color: #000;
+}
+
+.content img {
+    margin: 30px;
+    width: 300px;
+    height: 200px;
+}
+
+.footer {
+    margin: 10px auto;
+    width: 1024px;
+    height: 150px;
+    background-color: rgb(99, 97, 97);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.footer_text {
+    font-size: 14px; 
+    font: 1em sans-serif;
+    color:#fff;      
+}
+
+.card {
+    margin-top: 30px;
+    width: 300px;
+    height: 450px;    
+    background-color: rgb(231, 231, 228);
+}
+
+.bascet_card {
+    width: 100%;
+    height: 120px;
+    margin: 10px;
+    background-color: rgb(231, 231, 228);
+    display: flex;
+    justify-content: space-between;
+}
+
+.bascet_card_img {
+    height: 110px;
+    width: 110px;
+    margin: 5px;
+    background-color: #ccc;
+}
+
+.bascet_card_category {
+    height: 110px;
+    width: 110px;
+    margin: 5px;
+    background-color: #ccc;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.bascet_card_desc {
+    height: 110px;
+    width: 400px;
+    margin: 5px;
+    background-color: #ccc;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.bascet_card_price_unit {
+    height: 110px;
+    width: 110px;
+    margin: 5px;
+    background-color: #ccc;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.bascet_card_quantity {
+    height: 110px;
+    width: 110px;
+    margin: 5px;
+    background-color: #ccc;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.bascet_card_price_total {
+    height: 110px;
+    width: 110px;
+    margin: 5px;
+    background-color: #ccc;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
