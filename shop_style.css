@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://image.freepik.com/free-photo/starry-night-sky_1048-11828.jpg);
+    
+}
+
+.header {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 1024px;
+    height: 150px;
+    background-color: rgb(247, 241, 241);    
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_logo {
+    width: 300px;
+    height: 100px;
+    margin-top: 25px;
+    background-color: rgb(247, 241, 241);
+    
+    margin-left: 25px;
+}
+
+.header_menu {
+    list-style-type: none;
+    margin-top: 25px;    
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.header_menu_key {    
+    width: 80px;
+    height: 25px;
+    background-color: rgb(206, 210, 211);
+    margin: 0 5px;
+    text-decoration: none;      
+    font: 1em sans-serif;
+    font-size: 14px; 
+    color:black;
+    padding-top: 7px;
+    text-align: center;
+}
+
+.header_menu_key:hover {
+    background-color: rgb(99, 97, 97);   
+    color: #fff; 
+}
+
+.header_menu_key:active {
+    background-color: rgb(250, 4, 4);   
+    color: #fff; 
+}
+
+.header_form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.header_search {      
+    width: 205px;
+    height: 30px;
+    
+}
+
+.header_search_key {
+    width: 60px;
+    height: 30px;
+    margin-top: 25px;
+    margin-right: 25px;
+    background-color: rgb(206, 210, 211);
+}
+
+.header_search_key:hover {
+    background-color: rgb(99, 97, 97);   
+    color: #fff; 
+}
+
+.header_search_key:active {
+    background-color: rgb(250, 4, 4);   
+    color: #fff; 
+}
+
+.header_img {
+    width: 70px;
+    height: 70px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.header_bascet_count {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(149, 170, 175);
+    margin-top: 30px;    
+    color: #fff;
+    display: flex;    
+    justify-content: center;
+    align-items: center;     
+}
+
+.header_bascet_price {
+    font: 1em sans-serif;
+    font-size: 12px; 
+    color:black;
+    padding-top: 37px;
+    padding-left: 10px;
+}
+
+.content {
+    margin: 10px auto;
+    width: 1024px;    
+    background-color: rgb(247, 241, 241);    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.content_main {
+    justify-content: flex-start;
+}
+
+.content_main p {
+    margin-top: 30px;
+    margin-right: 25px;    
+    padding: 10px;
+    width: 615px;
+    font: 1em sans-serif;
+    background-color: rgb(206, 210, 211);
+    color: #000;
+}
+
+.content img {
+    margin: 30px;
+    width: 300px;
+    height: 200px;
+}
+
+.img_product {
+    background-color: none;
+}
+
+.img_product:hover {
+    background-color: rgb(168, 175, 177);;
+}
+
+.footer {
+    margin: 10px auto;
+    width: 1024px;
+    height: 150px;
+    background-color: rgb(99, 97, 97);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.footer_text {
+    font-size: 14px; 
+    font: 1em sans-serif;
+    color:#fff;      
+}
+
+.card {
+    margin-top: 30px;
+    width: 300px;
+    height: 450px;    
+    background-color: rgb(231, 231, 228);
+}
+
+.bascet_card {
+    width: 100%;
+    height: 120px;
+    margin: 10px;
+    background-color: rgb(231, 231, 228);
+    display: flex;
+    justify-content: space-between;
+}
+
+.bascet_card_img {
+    height: 110px;
+    width: 110px;
+    margin: 5px;
+    background-color: #ccc;
+}
+
+.bascet_card_category {
+    height: 110px;
+    width: 110px;
+    margin: 5px;
+    background-color: #ccc;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.bascet_card_desc {
+    height: 110px;
+    width: 400px;
+    margin: 5px;
+    background-color: #ccc;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.bascet_card_price_unit {
+    height: 110px;
+    width: 110px;
+    margin: 5px;
+    background-color: #ccc;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.bascet_card_quantity {
+    height: 110px;
+    width: 110px;
+    margin: 5px;
+    background-color: #ccc;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.bascet_card_price_total {
+    height: 110px;
+    width: 110px;
+    margin: 5px;
+    background-color: #ccc;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.bascet_total {
+    width: 100%;
+    height: 60px;
+    margin: 10px;
+    margin-bottom: 0;
+    background-color: rgb(231, 231, 228);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.bascet_total_text {
+    height: 50px;
+    width: 580px;
+    margin: 5px;
+    background-color: #ccc;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    font: 1em sans-serif;
+    font-size: 20px; 
+    color:black;
+}
+
+.pay {
+    height: 50px;
+    width: 200px;
+    margin: 5px;
+    background-color: rgb(183, 207, 181);
+    font-size: 16px; 
+}
+
+.pay:hover {    
+    background-color: rgb(80, 124, 76);  
+    color: #fff;  
+}
+
+.pay:active {    
+    background-color: red;  
+    color: #fff;  
+}
+
+.clear {
+    height: 50px;
+    width: 200px;
+    margin: 5px;
+    background-color: rgb(190, 149, 149);
+    font-size: 16px; 
+}
+
+.clear:hover {    
+    background-color: rgb(161, 87, 87);  
+    color: #fff;  
+}
+
+.clear:active {    
+    background-color: red;  
+    color: #fff;  
+}
+
+.present_product {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+    z-index: 4444;
+}
+
+.present_product_wind {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 600px;
+    margin-left: -400px;
+    margin-top: -300px;
+    background-color: white;        
+}
+
+.present_product_key_left {
+    position: fixed;
+    top: 50%;  
+    left: 10%;  
+    width: 50px;
+    height: 50px;
+    margin-top: -35px;
+    background-color: #ccc;     
+    font-size: 20;   
+    opacity: 0.2;  
+}
+
+.present_product_key_left:hover {
+    opacity: 1;   
+}
+
+
+.present_product_key_right {
+    position: fixed;
+    top: 50%;  
+    left: 85.5%;  
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;    
+    background-color: #ccc;     
+    transform: rotate(180deg);
+    opacity: 0.2;  
+}
+
+.present_product_key_right:hover {
+    opacity: 1;   
+}
+
+.present_product_key_exit {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: 350px;
+    margin-top: -300px;
+    width: 50px;
+    height: 50px;
+    background-color: #ccc; 
+    opacity: 0.2;  
+}
+
+.present_product_key_exit:hover {
+    opacity: 1;   
+}
