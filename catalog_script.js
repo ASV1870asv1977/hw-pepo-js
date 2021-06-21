@@ -249,26 +249,27 @@ function add_bascet(e) {
 }
 
 function show_img(e) {
-    if (e.target.getAttribute('id') == 'present_product_key_right') {
+    if (e.target.getAttribute('id') == 'present_product_key_right' || (e.type == 'keydown' && e.code == 'ArrowRight')) {
         count_img += 1;
         if (count_img > 2) {
-            count_img = 2;
-        }
-        document.getElementById('present_product_wind').setAttribute('src', storehaus[product_number_id - 1]['url_add'][count_img]);
-    }
-    if (e.target.getAttribute('id') == 'present_product_key_left') {
-        count_img -= 1;
-        if (count_img < 0) {
             count_img = 0;
         }
         document.getElementById('present_product_wind').setAttribute('src', storehaus[product_number_id - 1]['url_add'][count_img]);
     }
-    if (e.target.getAttribute('id') == 'present_product_key_exit') {
+
+    if (e.target.getAttribute('id') == 'present_product_key_left' || (e.type == 'keydown' && e.code == 'ArrowLeft')) {
+        count_img -= 1;
+        if (count_img < 0) {
+            count_img = 2;
+        }
+        document.getElementById('present_product_wind').setAttribute('src', storehaus[product_number_id - 1]['url_add'][count_img]);
+    }
+
+    if (e.target.getAttribute('id') == 'present_product_key_exit' || (e.type == 'keydown' && e.code == 'Escape')) {
         count_img = 0;
         document.getElementById('present_product_wind').setAttribute('src', '');
         document.getElementById('present_product').style.display = 'none';
     }
-    console.log(count_img);
 }
 
 catalog_draw();
@@ -278,10 +279,8 @@ let list_num = [];            // Список количеств выбранн�
 let list_presence = [];       // Список остатков товаров
 
 // Список товаров в корзине
-let bascet_content = JSON.parse(localStorage.getItem("bascet_content"));
-if (bascet_content == null || bascet_content == []) {
-    bascet_content = [];
-}
+let bascet_content = JSON.parse(localStorage.getItem("bascet_content")) || [];
+
 // Сумма товаров в корзине
 let sum_bascet_price = JSON.parse(localStorage.getItem("sum_bascet_price"));
 if (sum_bascet_price == null || sum_bascet_price == 0) {
@@ -315,6 +314,7 @@ content_catalog.addEventListener('click', add_bascet);
 // Добавление обработчика событий на поле id="present_product"
 const present_product = document.getElementById('present_product');
 present_product.addEventListener('click', show_img);
+document.addEventListener('keydown', show_img);
 
 
 console.log(bascet_content);

@@ -179,7 +179,8 @@ body {
 .bascet_card {
     width: 100%;
     height: 120px;
-    margin: 10px;
+    margin: 0px;
+    margin-top: 10px;
     background-color: rgb(231, 231, 228);
     display: flex;
     justify-content: space-between;
@@ -204,7 +205,7 @@ body {
 
 .bascet_card_desc {
     height: 110px;
-    width: 400px;
+    width: 300px;
     margin: 5px;
     background-color: #ccc;
     display: flex;    
@@ -242,15 +243,35 @@ body {
     align-items: center;
 }
 
+.bascet_card_del {
+    height: 110px;
+    width: 70px;
+    margin: 5px;
+    background-color: rgb(190, 149, 149);
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    font: 1em sans-serif;
+    font-size: 15px; 
+}
+
+.bascet_card_del:hover {    
+    background-color: rgb(161, 87, 87);
+    color: #fff;    
+}
+
+.bascet_card_del:active {    
+    background-color: red;     
+}
+
 .bascet_total {
     width: 100%;
     height: 60px;
-    margin: 10px;
+    margin-top: 10px;
     margin-bottom: 0;
     background-color: rgb(231, 231, 228);
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-between; 
 }
 
 .bascet_total_text {
@@ -370,6 +391,33 @@ body {
     opacity: 0.2;  
 }
 
-.present_product_key_exit:hover {
+.present_product_key_exit:hover {    
     opacity: 1;   
 }
+
+.invisible {
+    margin: 10px auto;
+    width: 1024px; 
+    height: 420px;
+    background-color: rgb(247, 241, 241);  
+    display: none;    
+}
+
+.registration_delivery {
+    width: 1004px;
+    height: 420px;
+    margin: 10px;   
+    background-color: rgb(231, 231, 228);
+    text-align: center;
+    font-size: 20pt;
+}
+
+.registration_block_key {
+    margin-top: 320px;
+    margin-left: 600px;
+    display: flex;    
+    justify-content: space-between;    
+}
+
+
+
